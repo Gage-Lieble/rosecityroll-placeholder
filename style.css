@@ -13,7 +13,7 @@ body {
 
 @font-face {
   font-family: 'futura'; 
-  src: url('/media/futura.ttf');
+  src: url('./media/futura.ttf');
 
 
 }
