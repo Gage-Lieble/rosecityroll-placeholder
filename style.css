@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    overflow-y: hidden;
+    font-family: "futura";
+    color: #eee0c5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background-color: rgb(73, 73, 73);
+}
+
+@font-face {
+  font-family: 'futura'; 
+  src: url('/media/futura.ttf');
+
+
+}
+
+#content-container{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    max-width: 650px;
+}
+
+#main-logo{
+    width: 75%;
+
+}
+h1{
+    text-align: center;
+    font-size: 35px;
+}
+
+p{
+    margin: 0px;
+    text-align: center;
+    /* background: red; */
+    width: 100%;
+    /* font-size: large; */
+}
+
+a{
+    color: #231f20;
+    margin: 30px 0px 30px 0px;
+    background-color: #7aad88;
+    padding: 15px;
+    width: 75vw;
+    text-align: center;
+    border-radius: 100px;
+    text-decoration: none;
+    max-width: 650px;
+}
+
+a:hover{
+    background-color: #638b6e;
+    color: #eee0c5;
+}
+
+.warn{
+    color: #dd3b33;
+    margin: 0px;
+}
