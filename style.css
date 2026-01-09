@@ -1,3 +1,4 @@
+/* Config */
 body {
     margin: 0;
     overflow-y: hidden;
@@ -8,28 +9,25 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    background-color: rgb(73, 73, 73);
+    background-color: rgb(32, 32, 32);
 }
 
 @font-face {
-  font-family: 'futura'; 
-  src: url('./media/futura.ttf');
-
-
+    font-family: 'futura';
+    src: url('./media/futura.ttf');
 }
 
-#overlay{
+/* Header */
+#overlay {
     background-color: rgba(27, 27, 27, 0.85);
     backdrop-filter: blur(2px);
-    /* background-color: pink; */
     width: 100vw;
     height: 100vh;
     position: absolute;
     z-index: -1;
-    
-
 }
-#content-container{
+
+#content-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,26 +36,26 @@ body {
     max-width: 650px;
 }
 
-#main-logo{
+#main-logo {
     width: 75%;
     margin: 35px 0px 0px 0px;
-
 }
-h1{
+
+/* Text */
+h1 {
     text-align: center;
     font-size: 40px;
     margin: 15px 0px 15px 0px;
 }
 
-p{
+p {
     margin: 0px;
     text-align: center;
     font-size: 20px;
     width: 100%;
-   
 }
 
-a{
+a {
     color: #231f20;
     margin: 30px 0px 30px 0px;
     background-color: #7aad88;
@@ -70,44 +68,49 @@ a{
     font-size: 20px;
 }
 
-a:hover{
+a:hover {
     background-color: #638b6e;
     color: #eee0c5;
 }
 
-.warn{
+.warn {
     color: #dd3b33;
     margin: 0px;
 }
 
-.backdrop-vid{
+/* Video */
+.backdrop-vid {
     position: absolute;
     right: 0;
     bottom: 0;
     z-index: -2;
     width: 100vw;
-    height: 100hv;
 }
 
-#associated-container{
+/* Footer */
+#associated-container {
     width: 100vw;
-    /* background-color: pink; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin: 25px 0px 25px 0px;
     overflow: hidden;
     max-width: 450px;
-    
 }
 
-.associated{
-    /* width: 15%; */
+
+.associated {
     height: 100%;
     max-width: 100px;
 }
 
-#LaLlaveAllen{
-    /* width: 13%; */
-    height: 100%;
+#LaLlaveAllen {
+    height: 95%;
+}
+
+/* Responsive */
+@media screen and (min-width: 768px) {
+  .backdrop-vid {
+    bottom: -175%;
+}
 }
