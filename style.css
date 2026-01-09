@@ -1,7 +1,7 @@
 /* Config */
 body {
     margin: 0;
-    overflow-y: hidden;
+    overflow: hidden;
     font-family: "futura";
     color: #eee0c5;
     display: flex;
@@ -9,9 +9,11 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(58, 58, 58);
 }
-
+html{
+    overflow: hidden;
+}
 @font-face {
     font-family: 'futura';
     src: url('./media/futura.ttf');
@@ -84,7 +86,7 @@ a:hover {
     right: 0;
     bottom: 0;
     z-index: -2;
-    width: 100vw;
+    width: 125vw;
 }
 
 /* Footer */
