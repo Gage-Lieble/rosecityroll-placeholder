@@ -17,7 +17,12 @@ html{
 }
 @font-face {
     font-family: 'futura';
-    src: url('./media/futura.ttf');
+    src: url('./media/fonts/futura.ttf');
+}
+
+@font-face {
+    font-family: 'luckyorganics';
+    src: url('./media/fonts/luckyorganics.otf');
 }
 
 /* Header */
@@ -59,7 +64,7 @@ p {
     width: 100%;
 }
 
-a {
+#more-info {
     color: #231f20;
     margin: 30px 0px 30px 0px;
     background-color: #7aad88;
@@ -72,9 +77,12 @@ a {
     font-size: 20px;
 }
 
-a:hover {
+#more-info:hover {
     background-color: #638b6e;
     color: #eee0c5;
+}
+a{
+    width: 100%;
 }
 
 .warn {
@@ -128,6 +136,75 @@ a:hover {
     height: 95%;
 }
 
+/* 404 error */
+#err-container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#err-logo{
+    filter: invert(85%);
+    width: 50%;
+}
+#err-msg-container{
+    width: 100vw;
+    max-width: 400px;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#help-btn{
+    /* background-color: pink; */
+    width: 50%;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    text-decoration: none;
+    color: #857d70;
+}
+.err{
+    color: #dd3b33;
+}
+.err-msg{
+    font-size: 40px;
+    margin: 10px 0px 0px 0px;
+    color: #231f20;
+    font-family: luckyorganics;
+    letter-spacing: 2px;
+}
+
+#err-btn-container{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#err-goback-btn{
+    color: #231f20;
+    background-color: #7aad88;
+    padding: 15px;
+    width: 75vw;
+    text-align: center;
+    border-radius: 100px;
+    text-decoration: none;
+    max-width: 400px;
+    font-size: 20px;
+}
+#err-goback-btn:hover {
+    background-color: #638b6e;
+    color: #eee0c5;
+}
 /* Responsive */
 @media screen and (min-width: 768px) {
   .backdrop-vid {
