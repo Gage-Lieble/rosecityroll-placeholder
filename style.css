@@ -3,13 +3,14 @@ body {
     margin: 0;
     overflow: hidden;
     font-family: "futura";
-    color: #eee0c5;
+    color: #231f20;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    background-color: rgb(58, 58, 58);
+    /* background-color: rgb(58, 58, 58); */
+    background-color: #eee0c5;
 }
 html{
     overflow: hidden;
@@ -21,7 +22,8 @@ html{
 
 /* Header */
 #overlay {
-    background-color: rgba(27, 27, 27, 0.85);
+    /* background-color: rgba(27, 27, 27, 0.85); */
+    background-color: #eee0c5b9;
     backdrop-filter: blur(2px);
     width: 100vw;
     height: 100vh;
