@@ -98,20 +98,20 @@ a{
     bottom: 0;
     z-index: -2;
     width: 100vw;
-    min-height: fit-content;
+    min-height: 100vh;
 
      -webkit-mask-image: linear-gradient(
         to bottom,
         transparent 0%,
-        black 40%,
-        black 60%,
+        black 30%,
+        black 70%,
         transparent 100%
     );
     mask-image: linear-gradient(
         to bottom,
         transparent 0%,
-        black 40%,
-        black 60%,
+        black 30%,
+        black 70%,
         transparent 100%
     );
 }
